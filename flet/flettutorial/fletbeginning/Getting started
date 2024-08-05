@@ -1,0 +1,24 @@
+Getting started
+	md first-flet-app
+	cd first-flet-app
+	python -m venv .venv
+	.venv\Scripts\activate
+	pip install flet
+
+Create a new Flet app
+	flet create <project-name>
+	flet create my_flet_app
+	#code
+	import flet as ft
+
+	def main(page: ft.Page):
+	    page.add(ft.SafeArea(ft.Text("Hello, Flet!")))
+
+	ft.app(main)
+
+Runing Flet app
+	flet run
+	flet run [script]
+	flet run /Users/JohnSmith/Documents/projects/flet-app
+	flet run --web [script]
+	flet run --web --port 8000 app.py
